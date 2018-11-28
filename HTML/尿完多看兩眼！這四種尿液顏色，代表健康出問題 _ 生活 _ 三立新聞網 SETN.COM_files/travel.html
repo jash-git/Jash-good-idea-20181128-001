@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://ad.setn.com/Ads/travel -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size:0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: flex-start;
+            -webkit-flex-align: flex-start;
+            -ms-flex-align: flex-start;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            width: 100%;
+            height:100vh;
+            max-height: 736px;
+            box-sizing: border-box;
+            /*padding-bottom: 2px;*/
+            background-color: black;
+            background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 1%);
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 1%);
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 1%);
+        }
+    </style>
+    
+
+    <link href="./travel.css" rel="stylesheet">
+    <script async="" src="./analytics.js.下載"></script><script src="./jquery.min.js(1).下載"></script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-86419708-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script src="./google-analyticsjs.js.下載"></script>
+    <script>
+        $(document).ready(function () {
+            $('.travel-op > a').bind('click', function () {
+                var dom = $(this)[0];
+                var id = parseInt(dom.dataset.adid, 10);
+                var type = parseInt(dom.dataset.adtype, 10);
+                if (id !== 0) {
+                    type = type == 1 ? type : 2
+                    $.post('/api/Travels/PostTravelAD/' + id + '/' + type + '/1', function (data) { });
+                }
+            });
+
+            $('.travel-ads > h5 > a').bind('click', function () {
+                var dom = $(this)[0];
+                var id = parseInt(dom.dataset.adid, 10);
+                $.post('/api/Travels/PostTravelAD/' + id + '/2/1', function (data) { });
+            });
+
+            try {
+                var ids = [];
+                $('.travel-op > a').each(function (index, arg) {
+                    var type = parseInt(arg.dataset.adtype, 10);
+                    if (type == 0) {
+                        ids.push(parseInt(arg.dataset.adid, 10));
+                    }
+                });
+                $('.travel-ads > h5 > a').each(function (index, arg) {
+                    ids.push(parseInt(arg.dataset.adid, 10));
+                });
+
+                $.post('/api/Travels/PostTravelADViewCount/' + ids.toString() + '/3/1', function () { });
+            }
+            catch (ex) {
+                console.log(ex.message);
+            }
+        });
+    </script>
+
+    <style>
+        .travel-container {
+            background-color:#FED71A;
+        }
+        .travel-container > div > .travel-ads > h5 > a {
+            color:#000000;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div>
+            
+
+<div class="travel-container">
+    
+    <section class="travel-head">
+        <img src="./travel_img.gif">
+    </section>
+        <div>
+            <div class="travel-op">
+                        <a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9977" class="gt" data-pa="旅遊長版(PC)" data-pl="巨匠1126" target="_blank" data-adid="41" data-adtype="1"><img src="./巨匠.gif" alt="巨匠1126"></a>
+
+            </div>
+            <div class="travel-ads">
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9978" class="gt" data-pa="旅遊長版(PC)" data-pl="奧捷斯匈十天54900起" target="_blank" data-adid="80">‧ 奧捷斯匈十天54900起</a></h5>
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9979" class="gt" data-pa="旅遊長版(PC)" data-pl="紐國南島9天96800起" target="_blank" data-adid="81">‧ 紐國南島9天96800起</a></h5>
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9980" class="gt" data-pa="旅遊長版(PC)" data-pl="新興旅遊地：約旦、以色列" target="_blank" data-adid="82">‧ 新興旅遊地：約旦、以色列</a></h5>
+            </div>
+        </div>
+        <div>
+            <div class="travel-op">
+                        <a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9969" class="gt" data-pa="旅遊長版(PC)" data-pl="喜鴻1126" target="_blank" data-adid="28" data-adtype="1"><img src="./喜鴻.gif" alt="喜鴻1126"></a>
+
+            </div>
+            <div class="travel-ads">
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9970" class="gt" data-pa="旅遊長版(PC)" data-pl="花現土耳其 搭熱氣球玩主題夜" target="_blank" data-adid="98">‧ 花現土耳其 搭熱氣球玩主題夜</a></h5>
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9971" class="gt" data-pa="旅遊長版(PC)" data-pl="荷比法9天 雙城堡三遊船" target="_blank" data-adid="99">‧ 荷比法9天 雙城堡三遊船</a></h5>
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9972" class="gt" data-pa="旅遊長版(PC)" data-pl="戀上帛琉超值4日25400起" target="_blank" data-adid="100">‧ 戀上帛琉超值4日25400起</a></h5>
+            </div>
+        </div>
+        <div>
+            <div class="travel-op">
+                        <a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9981" class="gt" data-pa="旅遊長版(PC)" data-pl="京城天下1126" target="_blank" data-adid="39" data-adtype="1"><img src="./喜遊網.gif" alt="京城天下1126"></a>
+
+            </div>
+            <div class="travel-ads">
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9982" class="gt" data-pa="旅遊長版(PC)" data-pl="馬新雙國環球樂高15800起" target="_blank" data-adid="77">‧ 馬新雙國環球樂高15800起</a></h5>
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9983" class="gt" data-pa="旅遊長版(PC)" data-pl="雲南中甸石卡雪山27500起" target="_blank" data-adid="78">‧ 雲南中甸石卡雪山27500起</a></h5>
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9984" class="gt" data-pa="旅遊長版(PC)" data-pl="新春北海道破冰船56800起" target="_blank" data-adid="79">‧ 新春北海道破冰船56800起</a></h5>
+            </div>
+        </div>
+        <div>
+            <div class="travel-op">
+                        <a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9965" class="gt" data-pa="旅遊長版(PC)" data-pl="澳遊客1126" target="_blank" data-adid="42" data-adtype="1"><img src="./澳遊客.gif" alt="澳遊客1126"></a>
+
+            </div>
+            <div class="travel-ads">
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9966" class="gt" data-pa="旅遊長版(PC)" data-pl="雪梨跨年煙火12月限定出發" target="_blank" data-adid="132">‧ 雪梨跨年煙火12月限定出發</a></h5>
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9967" class="gt" data-pa="旅遊長版(PC)" data-pl="寒假春節超值行程熱銷中	" target="_blank" data-adid="64">‧ 寒假春節超值行程熱銷中	</a></h5>
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9968" class="gt" data-pa="旅遊長版(PC)" data-pl="小資族首選雪梨微旅行" target="_blank" data-adid="65">‧ 小資族首選雪梨微旅行</a></h5>
+            </div>
+        </div>
+        <div>
+            <div class="travel-op">
+                        <a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9973" class="gt" data-pa="旅遊長版(PC)" data-pl="找到了1126" target="_blank" data-adid="40" data-adtype="1"><img src="./找到了.gif" alt="找到了1126"></a>
+
+            </div>
+            <div class="travel-ads">
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9974" class="gt" data-pa="旅遊長版(PC)" data-pl="韓國濟州島4/5日7900	" target="_blank" data-adid="104">‧ 韓國濟州島4/5日7900	</a></h5>
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9975" class="gt" data-pa="旅遊長版(PC)" data-pl="北海道玩雪三大蟹25900" target="_blank" data-adid="105">‧ 北海道玩雪三大蟹25900</a></h5>
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9976" class="gt" data-pa="旅遊長版(PC)" data-pl="12月止訂大阪過年送環球門票" target="_blank" data-adid="106">‧ 12月止訂大阪過年送環球門票</a></h5>
+            </div>
+        </div>
+        <div>
+            <div class="travel-op">
+                        <a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9985" class="gt" data-pa="旅遊長版(PC)" data-pl="宏飛1126" target="_blank" data-adid="37" data-adtype="1"><img src="./宏飛.gif" alt="宏飛1126"></a>
+
+            </div>
+            <div class="travel-ads">
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9986" class="gt" data-pa="旅遊長版(PC)" data-pl="深度四國全覽 道後溫泉小豆島" target="_blank" data-adid="95">‧ 深度四國全覽 道後溫泉小豆島</a></h5>
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9987" class="gt" data-pa="旅遊長版(PC)" data-pl="雪怪出沒! 冬季限定藏王樹冰" target="_blank" data-adid="96">‧ 雪怪出沒! 冬季限定藏王樹冰</a></h5>
+                        <h5><a href="http://event.7to.com.tw/2015/link.php?PID=493&amp;PSID=9988" class="gt" data-pa="旅遊長版(PC)" data-pl="北陸能登加賀屋 白川鄉合掌村" target="_blank" data-adid="97">‧ 北陸能登加賀屋 白川鄉合掌村</a></h5>
+            </div>
+        </div>
+</div>
+        </div>
+    </div>
+
+
+</body></html>
